@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Biaya Listrik</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Kalkulator Biaya Listrik</h2>
+        <div class="forms-1">
+            <div class="form-barang">
+                <label for="">Nama Barang :</label>
+                <br>
+                <input type="text" class="namaBarang" placeholder="contoh : AC 1/2 PK">
+            </div>
+            <div class="form-daya">
+                <label for="">Daya :</label>
+                <br>
+                <input type="number" class="daya" placeholder="400"><span>Watt</span>
+            </div>
+        </div>
+        <br>
+        <div class="forms-2">
+            <div class="form-durasi">
+                <label for="">Durasi penggunaan / hari:</label>
+                <br>
+                <input type="number" class="durasi" placeholder="4"><span>Jam</span>
+            </div>
+            <div class="form-tarif">
+                <label for="">Dasar tarif listrik / kWh :</label>
+                <br>
+            <input type="number" class="dasarTarif" placeholder="1699.53"><button id="btn-link"><a href="https://money.kompas.com/image/2022/07/03/130130526/daftar-harga-listrik-per-kwh-2022-untuk-golongan-tarif-non-subsidi?page=1">?</a></button>
+            </div> 
+            
+        </div>
+        <br>
+        <button id="tambah">Tambah</button>               
+        <hr>
+
+        <div class="list-item">
+            <div class="form-list">
+                <h3>Nama barang</h3>
+                <ul id="list-barang">
+                    
+                </ul>
+                <h3><b>Total</b></h3>
+            </div>
+            <div class="form-harian">
+                <h3>Harian</h3>
+                <ul id="list-harian">
+                    
+                </ul>
+                <h3 id="total-harian"></h3>
+            </div>
+            <div class="form-mingguan">
+                <h3>Mingguan</h3>
+                <ul id="list-mingguan">
+                    
+                </ul>
+                <h3 id="total-mingguan"></h3>
+            </div>
+            <div class="form-bulanan">
+                <h3>Bulanan</h3>
+                <ul id="list-bulanan">
+                    
+                </ul>
+                <h3 id="total-bulanan"></h3>
+            </div>        
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
